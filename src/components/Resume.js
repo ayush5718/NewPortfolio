@@ -100,6 +100,7 @@ const Resume = ({ timeline }) => {
                 <span> Education </span>
               </h5>
               <div className="history-items">
+                {/* mapping each item and displaying if enabled is true  */}
                 {educationData.map((education) => (
                   education.enabled && <div
                     key={education._id}
@@ -153,6 +154,7 @@ const Resume = ({ timeline }) => {
                 <span> Experience </span>
               </h5>
               <div className="history-items">
+                {/* mapping each item and displaying if enabled is true  */}
                 {experienceData.map((experience) => (
                   experience.enabled &&
                   <div
@@ -185,15 +187,15 @@ const Resume = ({ timeline }) => {
                           )}
                         </span>
                       </div>
-                        <div className="experience-location">
-                          <p>{experience.jobLocation}</p>
-                        </div>
-                      <div className="text" style={{paddingTop:'0px'}}>
+                      <div className="experience-location">
+                        <p>{experience.jobLocation}</p>
+                      </div>
+                      <div className="text" style={{ paddingTop: '0px' }}>
                         <div>
                           <p>{experience.summary}</p>
                         </div>
                         <ul>
-                          {experience.bulletPoints.map((point,index)=>(
+                          {experience.bulletPoints.map((point, index) => (
                             <li key={index}>{point}</li>
                           ))}
                         </ul>
