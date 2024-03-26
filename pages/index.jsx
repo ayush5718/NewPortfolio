@@ -23,7 +23,7 @@ const Index = () => {
   // function that fetches the user data 
   async function fetchUserData() {
     try {
-      const response = await fetch("https://portfolio-backend-30mp.onrender.com/api/v1/get/user/65b3a22c01d900e96c4219ae", {
+      const response = await fetch("https://portfolio-backend-30mp.onrender.com/api/v1/get/user/6602f1842197909a03f3c8da", {
         method: "GET",
         headers: {
           'Content-Type': 'application/json'

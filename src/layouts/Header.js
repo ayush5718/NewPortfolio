@@ -26,12 +26,13 @@ const Header = () => {
               <div className="logo">
                 <Link href="/"  legacyBehavior>
                   <a>
-                    <img
+                    {/* <img
                       width={228}
                       height={38}
                       src="assets/images/logo2.png"
                       alt=""
-                    />
+                    /> */}
+                    <h3>Aayush</h3>
                   </a>
                 </Link>
               </div>
